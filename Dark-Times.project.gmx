@@ -36,7 +36,7 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>wrap_oal.dll</filename>
+      <filename></filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
