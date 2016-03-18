@@ -19,7 +19,7 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>OpenAL32.dll</filename>
+      <filename></filename>
     </datafile>
     <datafile>
       <name>wrap_oal.dll</name>
@@ -51,6 +51,7 @@
       <sound>sound\snd_shotbig</sound>
     </sounds>
     <sound>sound\snd_music</sound>
+    <sound>sound\snd_engine</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -226,6 +227,14 @@
       <object>objects\obj_ETowerMiniWreck</object>
       <object>objects\obj_bulletenemy</object>
     </objects>
+    <objects name="Enemy_Buildings">
+      <object>objects\obj_EnemMGBunker</object>
+      <object>objects\obj_EnemyMGBunker_des</object>
+    </objects>
+    <objects name="KFZ">
+      <object>objects\obj_KFZcontrol</object>
+      <object>objects\obj_repair</object>
+    </objects>
     <objects name="Buildings">
       <objects name="houses">
         <object>objects\obj_house1</object>
@@ -241,14 +250,6 @@
       <object>objects\obj_shopsign</object>
       <object>objects\obj_kfzsign</object>
       <object>objects\obj_tankdeco</object>
-    </objects>
-    <objects name="KFZ">
-      <object>objects\obj_KFZcontrol</object>
-      <object>objects\obj_repair</object>
-    </objects>
-    <objects name="Enemy_Buildings">
-      <object>objects\obj_EnemMGBunker</object>
-      <object>objects\obj_EnemyMGBunker_des</object>
     </objects>
     <object>objects\obj_trigger</object>
     <object>objects\obj_up</object>

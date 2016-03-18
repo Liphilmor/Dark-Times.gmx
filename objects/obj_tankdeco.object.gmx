@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_object(obj_bullet) &lt; 10
+            <string>/*
+if distance_to_object(obj_bullet) &lt; 10
 {
     live -= 1
         if live &lt;= 0
@@ -73,9 +74,163 @@ if distance_to_object(obj_MGbullet) &lt; 10
         idtower = instance_create(x,y,obj_ETowerMiniWreck)
         }
 }
+*/
+/*
+
+if collision_circle(x,y,64,obj_bullet,1,0) &gt;-1 {
+        live -= 1
+        if live &lt;= 0
+        {
+        idwreck = instance_create(x,y,obj_enemywreck)
+        idwreck.image_angle = direction
+        instance_destroy()
+        
+        instance_create(x,y,obj_explosion)
+        idtower = instance_create(x,y,obj_ETowerMiniWreck)
+        }
+}
+*/
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_MGbullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>live -= 0.05
+        if live &lt;= 0
+        {
+        idwreck = instance_create(x,y,obj_enemywreck)
+        idwreck.image_angle = direction
+        instance_destroy()
+        
+        instance_create(x,y,obj_explosion)
+        idtower = instance_create(x,y,obj_ETowerMiniWreck)
+        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bulletBig">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>live -= 2
+        if live &lt;= 0
+        {
+        idwreck = instance_create(x,y,obj_enemywreck)
+        idwreck.image_angle = direction
+        instance_destroy()
+        
+        instance_create(x,y,obj_explosion)
+        idtower = instance_create(x,y,obj_ETowerMiniWreck)
+        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>live -= 1
+        if live &lt;= 0
+        {
+        idwreck = instance_create(x,y,obj_enemywreck)
+        idwreck.image_angle = direction
+        instance_destroy()
+        
+        instance_create(x,y,obj_explosion)
+        idtower = instance_create(x,y,obj_ETowerMiniWreck)
+        }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
