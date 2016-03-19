@@ -73,6 +73,12 @@ if global.info != ""
     draw_text(view_xview+655,view_yview+670,"Information:#"+string(global.info))
 }
 
+//Version
+draw_set_color(c_white)
+    draw_set_font(font_gui_mini)
+    draw_text(view_xview+1000,view_yview,string(global.gamename)+ " Version: "
+    +"  "+string(global.gameversion)+string(global.gamestate))
+
 //draw_set_color(c_black)
 //make_color_rgb(255,155,6)
 </string>

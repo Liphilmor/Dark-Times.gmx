@@ -46,10 +46,14 @@ global.dirmerk = 0
 global.lastspeed = 0
 global.munprim = 70
 global.munsec = 1250
+//Game Info
+global.gamename = "Dark Times"
+global.gameversion = 0.091
+global.gamestate = "DEV"
 
-alarm[0] = room_speed*6
+alarm[0] = room_speed*2
 
-audio_play_sound(snd_intro, true, 0)
+audio_play_sound(snd_intro2, true, 0)
 
 randomize()
 </string>

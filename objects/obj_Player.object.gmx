@@ -160,7 +160,7 @@ if keyboard_check(ord('W'))
 {
     lastpressed = "w"
     if speed &lt; max_speed
-        speed += 0.025
+        speed += 0.05
     else if speed &gt; max_speed
         speed = max_speed
 }
@@ -168,9 +168,9 @@ if keyboard_check(ord('S'))
 {
     lastpressed = "s"
     if speed &gt; 0
-        speed -= 0.25
+        speed -= 0.5
     else if speed &gt; min_speed
-        speed -= 0.025
+        speed -= 0.05
     else if speed &lt; min_speed
         speed = min_speed
 }
@@ -451,11 +451,35 @@ if timer &gt; 0 {
           <argument>
             <kind>1</kind>
             <string>///Engine Sound
-/*
-if audio_exists(snd_engine) == false {
-    var s_engine = audio_play_sound(snd_engine, 10, false);
+
+if speed &lt; 0 or speed &lt; 0.2 {
+    audio_sound_pitch(obj_Player.engine, 0.7 - (speed / 9));
 }
-*/
+
+
+if speed = 0 and speed &lt; 0.2{
+    audio_sound_pitch(obj_Player.engine, 0.6);   
+}
+
+
+if speed &gt; 0.1 {
+    audio_sound_pitch(obj_Player.engine, 0.6 + (speed / 10));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*switch (gear)
    {
    case 1: audio_sound_pitch(s_engine, 0.8); break;
@@ -465,34 +489,33 @@ if audio_exists(snd_engine) == false {
    case 5: audio_sound_pitch(s_engine, 1.2); break;
    }
 */
-if speed &lt; 0.2 {
-    audio_sound_pitch(obj_Player.engine, 1.1);
-}
 
 
-if speed = 0 or speed &lt; 0.2{
-    audio_sound_pitch(obj_Player.engine, 0.8);   
-}
 
 
+/*
 if speed &gt; 0.2 and speed &lt; 1 {
-    audio_sound_pitch(obj_Player.engine, 1);
+    //audio_sound_pitch(obj_Player.engine, 1);
+    audio_sound_pitch(obj_Player.engine, 0.6 + (speed / 10))
 }
 
 
 if speed &gt; 1 and speed &lt; 2  {
-    audio_sound_pitch(obj_Player.engine, 1.1);
+    //audio_sound_pitch(obj_Player.engine, 1.1);
+    audio_sound_pitch(obj_Player.engine, 0.6 + (speed / 15))
 }
 
 
 if speed &gt; 2 and speed &lt; 3  {
-    audio_sound_pitch(obj_Player.engine, 1.2);
+    //audio_sound_pitch(obj_Player.engine, 1.2);
+    audio_sound_pitch(obj_Player.engine, 0.6 + (speed / 20))
 }
 
 if speed &gt; 3  {
-    audio_sound_pitch(obj_Player.engine, 1.3);
+    //audio_sound_pitch(obj_Player.engine, 1.3);
+    audio_sound_pitch(obj_Player.engine, 0.6 + (speed / 22))
 }
-
+*/
 
 </string>
           </argument>
