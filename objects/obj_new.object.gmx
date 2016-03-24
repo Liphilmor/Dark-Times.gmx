@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if global.wasmenu = false
 {
-    audio_play_sound(snd_music,true,1)
+    //audio_play_sound(snd_music,true,1)
     global.wasmenu = true
 }
 </string>

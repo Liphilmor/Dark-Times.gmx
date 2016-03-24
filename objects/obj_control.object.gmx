@@ -28,6 +28,7 @@
             <string>//if var_exists("money") == false
 
 load_ini(global.inifile)
+audio_play_sound(snd_environment,true,true)
 
 alarm[0] = room_speed * 30
 

@@ -4,6 +4,7 @@
 
 if argument0 = global.inifile
 {
+/*
     if !file_exists(global.inifile)
     {
         ini_open(global.inifile)
@@ -18,6 +19,7 @@ if argument0 = global.inifile
         global.sfxv = ini_read_real("Volume","sfxv", '')
         ini_close()
     }
+    */
 }
 else
 {
