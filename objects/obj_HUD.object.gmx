@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//HUD Sprite
+            <string>///HUD DRAW
+//HUD Sprite
 if instance_exists(obj_control)
     draw_sprite(spr_HUD,image_index,view_xview,view_yview+710)
 
@@ -76,8 +77,18 @@ if global.info != ""
 //Version
 draw_set_color(c_white)
     draw_set_font(font_gui_mini)
-    draw_text(view_xview+1000,view_yview,string(global.gamename)+ " Version: "
+    draw_text(view_xview+1020,view_yview,string(global.gamename)+ " Version: "
     +"  "+string(global.gameversion)+string(global.gamestate))
+
+//Ammo Prim       
+draw_set_color(c_white)
+    draw_set_font(font_gui_mini)
+    draw_text(view_xview,view_yview,"Munition Primär: " + string(global.munprim))
+    
+//Ammo Sec      
+draw_set_color(c_white)
+    draw_set_font(font_gui_mini)
+    draw_text(view_xview,view_yview + 20,"Munition Sekundär: " + string(global.munsec))
 
 //draw_set_color(c_black)
 //make_color_rgb(255,155,6)

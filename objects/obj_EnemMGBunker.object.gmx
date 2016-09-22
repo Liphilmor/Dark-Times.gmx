@@ -78,7 +78,7 @@ MGY2 = y + lengthdir_y(10,point_direction(x,y,mouse_x,mouse_y) - 50)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if reload &lt; 5
+            <string>if reload &lt; 20
     reload += 1
     
 //Kreisbahn damit die Bullets sich nicht verschieben.    
@@ -92,9 +92,9 @@ MGY2 = y + lengthdir_y(10,point_direction(x,y,obj_Player.x,obj_Player.y) - 50)
 //Schießen wenn der Spieler auf einer bestimmten DIstanz ist
 if distance_to_object(obj_Player) &lt; 380
 {
-    if reload &gt;= 5
+    if reload &gt;= 20
     {
-        audio_play_sound(snd_mgshot,true,0)
+        audio_play_sound(snd_shotsmall,true,0)
         //gs_play_distance_sound(snd_mgshot,500,obj_Player)
         
         id_bullet1 = instance_create(MGX,MGY,obj_enemyMGbullet)

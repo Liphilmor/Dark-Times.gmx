@@ -99,6 +99,7 @@
         <sprite>sprites\spr_house5</sprite>
         <sprite>sprites\spr_house6</sprite>
       </sprites>
+      <sprite>sprites\spr_defwallcor</sprite>
     </sprites>
     <sprites name="projectiles">
       <sprite>sprites\spr_bulletenemy</sprite>
@@ -145,39 +146,6 @@
     </paths>
   </paths>
   <scripts name="scripts">
-    <scripts name="SG-Aduio">
-      <script>scripts\sga_Play.gml</script>
-      <script>scripts\sga_Init.gml</script>
-      <script>scripts\sga_SetCamDir.gml</script>
-      <script>scripts\sga_GetType.gml</script>
-      <script>scripts\sga_CreateEmitter.gml</script>
-      <script>scripts\sga_Free.gml</script>
-      <script>scripts\sga_SetGroupVol.gml</script>
-      <script>scripts\sga_GetGroupVol.gml</script>
-      <script>scripts\sga_Pause.gml</script>
-      <script>scripts\sga_SetPanning.gml</script>
-      <script>scripts\sga_DestroyEmitter.gml</script>
-      <script>scripts\sga_Stop.gml</script>
-      <script>scripts\sga_SetType.gml</script>
-      <script>scripts\sga_GetVol.gml</script>
-      <script>scripts\sga_Rewind.gml</script>
-      <script>scripts\sga_IsPlaying.gml</script>
-      <script>scripts\sga_SetPlayOffset.gml</script>
-      <script>scripts\sga_FadeVol.gml</script>
-      <script>scripts\sga_SetPitch.gml</script>
-      <script>scripts\sga_SetVol.gml</script>
-      <script>scripts\sga_PlayFX.gml</script>
-      <script>scripts\sga_Play3DFX.gml</script>
-      <script>scripts\sga_CreateFX.gml</script>
-      <script>scripts\sga_Create3DFX.gml</script>
-      <script>scripts\sga_TrackPlay.gml</script>
-      <script>scripts\sga_SetPosition.gml</script>
-      <script>scripts\sga_Set3DMode.gml</script>
-      <script>scripts\sga_SetDistFactor.gml</script>
-      <script>scripts\sga_GetPlayOffset.gml</script>
-      <script>scripts\sga_SetLooping.gml</script>
-      <script>scripts\sga_SetCamPos.gml</script>
-    </scripts>
     <scripts name="gearsoft">
       <script>scripts\load_ini.gml</script>
       <script>scripts\gs_SpawnPlayerPos.gml</script>
@@ -249,6 +217,7 @@
       </objects>
       <object>objects\obj_hangar</object>
       <object>objects\obj_defwall</object>
+      <object>objects\obj_defwallcor</object>
       <object>objects\obj_defwalldoor</object>
       <object>objects\obj_shopsign</object>
       <object>objects\obj_kfzsign</object>

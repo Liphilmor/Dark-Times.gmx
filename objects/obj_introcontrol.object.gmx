@@ -46,9 +46,10 @@ global.dirmerk = 0
 global.lastspeed = 0
 global.munprim = 70
 global.munsec = 1250
+
 //Game Info
 global.gamename = "Dark Times"
-global.gameversion = 0.091
+global.gameversion = 0.100
 global.gamestate = "DEV"
 
 alarm[0] = room_speed*2

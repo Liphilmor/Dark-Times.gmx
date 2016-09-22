@@ -39,8 +39,8 @@ global.timer = 0
 ldk = ""
 time = 50
 timer = global.timer
-
 engine = audio_play_sound(snd_engine,true,true)
+
 
 //global.ptower = "MiniMG"
     
@@ -280,8 +280,8 @@ if place_free(x+hspeed,y) == false
     move_contact_solid(0,-1)
     //speed= -1
   if hspeed &lt; 0
-    speed = 1
-    //move_contact_solid(180,-1)
+    //speed = 1
+    move_contact_solid(180,-1)
 
   hspeed = 0
 }
@@ -417,6 +417,7 @@ if timer &gt; 0 {
         timer = time
         ldk = "Y"
         global.money += 1000
+        audio_play_sound(snd_buy,true,false)
     }
 }
 
@@ -441,6 +442,7 @@ if timer &gt; 0 {
         ldk = "U"
         global.munprim += 25
         global.munsec += 500
+        audio_play_sound(snd_buy,true,false)
     }
 }
 </string>
@@ -481,6 +483,10 @@ if speed &gt; 0.2 {
 
 
 
+if audio_is_playing(engine) = false 
+{
+engine = audio_play_sound(snd_engine,true,true)
+}
 
 
 
